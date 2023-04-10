@@ -14,6 +14,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 
 
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch ('details.json')
       },
      
       {
