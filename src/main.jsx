@@ -15,6 +15,7 @@ import Home from './components/Home';
 
 
 
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -33,13 +34,15 @@ const router = createBrowserRouter([
      
       {
         path: 'jobs',
-        element: <Jobs></Jobs>
+        element: <Jobs></Jobs>,
+        loader: () => fetch('jobs.json')
       },
      
       {
         path: 'Blog',
         element: <Blog></Blog>
       },
+      
      
      
     ]

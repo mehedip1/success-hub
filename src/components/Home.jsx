@@ -9,16 +9,21 @@ import { faCoins, faLightbulb, faHandPointer, faLink } from '@fortawesome/free-s
 
 
 
+
  
 
 const Home = () => {
   const details = useLoaderData();
   
+
+
+
+    
   
 
     return (
-        <div>
-          <section className='ms-auto grid grid-cols-2 gap-5 mt-5'>
+        <div className='md:grid'>
+          <section className='ms-auto md:grid grid-cols-2 gap-5 mt-5'>
           <div>
           <h1 className='text-5xl mt-20 mb-10 ms-5 font-bold py-10 my-10'>
           One Step
@@ -71,19 +76,22 @@ const Home = () => {
             <h1 className='text-5xl mt-10 text-center font-bold'>Featured Jobs</h1>
             <p className='text-center py-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
            </div>
-           <div className='grid grid-cols-2'>
+           <div className='md:grid grid-cols-2'>
          
           {
             details.map(detail => <Detail 
             key={detail.id}
             detail={detail}
+           
             ></Detail>)
           }
               
             </div>
+            
             <div className='ms-5 mx-5 px-5 py-5 items-center'>
-            <button className='text-white mx-5  bg-indigo-500 rounded w-1/4 h-10'>See All Jobs</button>
+            <button className='text-white mx-5  bg-indigo-500 rounded-md w-1/4 h-10'>See All Jobs</button>
             </div>
+            
             
         </div>
     );
