@@ -1,8 +1,10 @@
 import React from 'react';
 
 
+
 const Job = ({job}) => {
-    const {email, salary, Title, phone, address,Description} = job;
+
+    const {email, salary, Title, phone, address} = job;
  
     
    

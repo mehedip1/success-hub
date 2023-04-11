@@ -1,4 +1,8 @@
 import React from 'react'; 
+import { Link } from 'react-router-dom';
+
+
+
 
 
 
@@ -12,9 +16,9 @@ import React from 'react';
      const {logo,  title, sub } = detail;
    
     return (
-        <nav className='mx-auto'>
-        <section>
-       <div className=" w-45 bg-base-100 ">
+        <nav>
+        <section className='ms-5 mt-5'>
+       <div className=" w-96 bg-base-100 shadow-xl ">
        <figure><img src={logo} alt="Shoes" /></figure>
       <div className="card-body">
        <h2 className='text-4xl'>{title}</h2>
@@ -30,7 +34,8 @@ import React from 'react';
        </div>
    <div className='my-5 ms-5'>
    
-   <button  className='text-white bg-indigo-500 rounded w-1/4 h-10 '>View Details</button>
+   
+  <Link to="/jobs"><button  className='text-white bg-indigo-500 rounded w-1/4 h-10 '>View Details</button></Link>
    </div>
    
        </section>

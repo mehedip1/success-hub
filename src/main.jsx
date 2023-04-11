@@ -8,10 +8,13 @@ import {
 } from "react-router-dom";
 
 import Statistics from './components/Statistics';
-import Jobs from './components/Jobs';
+
 import Blog from './components/Blog';
 import Layout from './components/Layout';
 import Home from './components/Home';
+import Job from './components/Job';
+import Jobs from './components/Jobs';
+
 
 
 
@@ -31,11 +34,17 @@ const router = createBrowserRouter([
         path: 'statistics',
         element: <Statistics></Statistics>
       },
+      {
+        path: 'jobs/:jobsId',
+        element:  <Job></Job>
+      },
+     
      
       {
         path: 'jobs',
         element: <Jobs></Jobs>,
         loader: () => fetch('jobs.json')
+       
       },
      
       {

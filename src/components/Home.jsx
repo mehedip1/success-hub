@@ -51,24 +51,24 @@ const Home = () => {
             <div>
                 <h1 className='text-5xl mt-5 text-center font-bold'>Job Category List</h1>
                 <p className='text-center py-3'><small>Explore thousands of job opportunities with all the information you need. Its your future</small></p>
-                <div className='mx-auto ms-10 grid grid-cols-4 py-5'>
-                   <div>
+                <div className='mx-auto ms-10 grid gap-3 grid-cols-4 py-5'>
+                   <div className='shadow-xl'>
                     <FontAwesomeIcon className='bg-indigo-500 w-15 ' icon={faCoins} />
                   <h1>Account & Finance</h1>
                     <p>300 Jobs Available</p>
                    </div>
-                   <div className="job">
+                   <div className="shadow-xl">
                    <FontAwesomeIcon icon={faLightbulb} />
                   
                    <h1>Creative Design</h1>
                     <p>200 Jobs Available</p>
                    </div>
-                   <div className="job">
+                   <div className="shadow-xl">
                    <FontAwesomeIcon icon={faHandPointer} />
                    <h1>Marketing & Sales</h1>
                     <p>150 Jobs Available</p>
                    </div>
-                   <div className="job">
+                   <div className="shadow-xl">
                    <FontAwesomeIcon icon={faLink} />
                    <h1>Engineering Job</h1>
                     <p>224 Jobs Available</p>
