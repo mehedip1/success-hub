@@ -1,8 +1,15 @@
-import React from 'react';
+import React from 'react'; 
 
-const Detail = ({detail}) => {
+
+
+
+ const Detail = ({detail}) => {
+
+
     
-    const {logo, title, sub} = detail;
+   
+    
+     const {logo,  title, sub } = detail;
    
     return (
         <nav className='mx-auto'>
@@ -22,16 +29,17 @@ const Detail = ({detail}) => {
       </div>
        </div>
    <div className='my-5 ms-5'>
-   <button className='text-white bg-indigo-500 rounded w-1/4 h-10 '>View Details</button>
+   
+   <button  className='text-white bg-indigo-500 rounded w-1/4 h-10 '>View Details</button>
    </div>
    
        </section>
        
-    
-   
-      
-    </nav>
+      </nav>
     );
 };
 
 export default Detail;
+
+
+

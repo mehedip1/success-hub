@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '.././components/images/logo.png'
 import { useLoaderData } from 'react-router-dom';
 import Detail from './Detail';
@@ -10,10 +10,15 @@ import { faCoins, faLightbulb, faHandPointer, faLink } from '@fortawesome/free-s
 
 
 
+
+
  
 
 const Home = () => {
   const details = useLoaderData();
+
+ 
+ 
   
 
 
@@ -82,9 +87,12 @@ const Home = () => {
             details.map(detail => <Detail 
             key={detail.id}
             detail={detail}
+      
            
             ></Detail>)
           }
+
+         
               
             </div>
             
