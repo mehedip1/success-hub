@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Text = ({text}) => { 
   const {logo, title, salary, sub, address} = text;
@@ -30,7 +31,7 @@ const Text = ({text}) => {
        </div>
         </div>
         <div>
-        <button className='text-white bg-indigo-500 rounded w-2/4 h-10'>View Details</button>
+       <Link to="/jobs"> <button className='text-white bg-indigo-500 rounded w-2/4 h-10'>View Details</button></Link>
         </div>
         </section>
             
