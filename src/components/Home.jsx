@@ -12,6 +12,7 @@ import { faCoins, faLightbulb, faHandPointer, faLink } from '@fortawesome/free-s
 
 
 
+
  
 
 const Home = () => {
@@ -53,7 +54,7 @@ const Home = () => {
                 <p className='text-center py-3'><small>Explore thousands of job opportunities with all the information you need. Its your future</small></p>
                 <div className='mx-auto ms-10 grid gap-3 grid-cols-4 py-5'>
                    <div className='shadow-xl'>
-                    <FontAwesomeIcon className='bg-indigo-500 w-15 ' icon={faCoins} />
+                    <FontAwesomeIcon className='w-15 h-max-10 bg-orange-600' icon={faCoins} />
                   <h1>Account & Finance</h1>
                     <p>300 Jobs Available</p>
                    </div>
@@ -82,22 +83,27 @@ const Home = () => {
             <p className='text-center py-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
            </div>
            <div className='md:grid grid-cols-2'>
+          
          
           {
             details.map(detail => <Detail 
             key={detail.id}
             detail={detail}
-      
-           
-            ></Detail>)
+             ></Detail>
+
+             
+            
+            )
+            
           }
+         
 
          
               
             </div>
             
-            <div className='ms-5 mx-5 px-5 py-5 items-center'>
-            <button className='text-white mx-5  bg-indigo-500 rounded-md w-1/4 h-10'>See All Jobs</button>
+            <div className='mx-5 mt-10 items-center text-center'>
+            <button className='text-white  bg-indigo-500 rounded-md w-60 h-10 '>See All Jobs</button>
             </div>
             
             

@@ -12,7 +12,7 @@ const Job = ({job}) => {
  
     return (
         <div>
-         <div className='grid grid-cols-2 gap-5 ms-5'>
+         <div className='grid grid-cols-2 gap-10 ms-5'>
            <div className='mt-10'>
             <h1 className='text-2xl font-bold'>Job Description: </h1>
             <p>A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface</p> <br />

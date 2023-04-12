@@ -14,6 +14,8 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Job from './components/Job';
 import Jobs from './components/Jobs';
+import About from './components/About';
+import Error from './components/Error';
 
 
 
@@ -23,6 +25,7 @@ const router = createBrowserRouter([
   {
     path:'/',
     element: <Layout></Layout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',
@@ -33,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: 'statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path: 'about',
+        element: <About></About>,
+        loader: () => fetch ('texts.json')
       },
       {
         path: 'jobs/:jobsId',

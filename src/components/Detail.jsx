@@ -1,5 +1,8 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocation } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -13,20 +16,26 @@ import { Link } from 'react-router-dom';
     
    
     
-     const {logo,  title, sub } = detail;
+     const {logo, address, salary,  title, sub } = detail;
    
     return (
         <nav>
         <section className='ms-5 mt-5'>
-       <div className=" w-96 bg-base-100 shadow-xl ">
-       <figure><img src={logo} alt="Shoes" /></figure>
-      <div className="card-body">
+       <div className=" bg-base-100 ms-5 shadow-xl ">
+       <figure><img className='w-30 h-10' src={logo} alt="Shoes" /></figure>
+      <div className='items-center justify-center'>
        <h2 className='text-4xl'>{title}</h2>
        <p>{sub}</p>
-       <div className='flex py-5 '>
-       <button className="border-solid border-2 text-indigo-500 border-indigo-500">Remote</button>
+       <div className='flex py-3'>
+       <div>
+       <button className="border-solid border-2 text-indigo-500 border-indigo-500 ">Remote</button>
+       </div>
       <div>
       <button className=" ms-5 border-solid border-2  border-indigo-500 text-indigo-500">Full Time</button>
+      <div className='flex  mt-3'>
+         <p><small><FontAwesomeIcon icon={faLocation} /> {address}</small> </p>
+        <p className='ms-5'>{salary}</p>
+                  </div>
      </div>
        </div>
        
@@ -39,6 +48,7 @@ import { Link } from 'react-router-dom';
    </div>
    
        </section>
+       
        
       </nav>
     );
